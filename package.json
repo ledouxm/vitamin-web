@@ -39,7 +39,7 @@
     "build-storybook": "nx run-many --target=build-storybook --all --parallel",
     "dep-graph": "nx dep-graph",
     "deploy-storybook": "storybook-to-ghpages --packages packages -o docs --monorepo-index-generator packages/showcases/core/scripts/index-generator.js",
-    "postinstall": "is-ci || husky install",
+    "postinstall": "husky install",
     "lint": "yarn prettier && yarn stylelint && nx run-many --target=lint --projects=@vtmn/react,@vtmn/svelte --parallel",
     "lint:fix": "yarn prettier:fix && yarn stylelint:fix && nx run-many --target=lint:fix --projects=@vtmn/react,@vtmn/svelte --parallel",
     "prettier": "prettier .",
